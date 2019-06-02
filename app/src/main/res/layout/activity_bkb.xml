@@ -3,5 +3,141 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  tools:context=".MainActivity">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content"
+                      android:text="Ingrese equipo 1: "
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"/>
+            <EditText android:layout_width="match_parent"
+                      android:id="@+id/et_equipo1"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="Ingrese equipo 2: "
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"/>
+            <EditText android:layout_width="match_parent"
+                      android:id="@+id/et_equipo2"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="Ingrese hora: "
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"/>
+            <EditText android:layout_width="match_parent"
+                      android:id="@+id/et_hora"
+                      android:layout_height="wrap_content"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="Ingrese fecha: "
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content"/>
+            <EditText android:layout_width="match_parent"
+                      android:id="@+id/et_fecha"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:text="Team A"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:id="@+id/equipo1"
+                        android:text="-"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                <Button
+                        android:id="@+id/btnUnoEquipo1"
+                        android:text="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addThreeTeamA"
+                />
+                <Button
+                        android:id="@+id/btnDosEquipo1"
+                        android:text="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addTwoTeamA"
+                        />
+                <Button
+                        android:id="@+id/btnTresEquipo1"
+                        android:text="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneTeamA"
+                        />
+            </LinearLayout>
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#D8D4D4"/>
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:text="Team B"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:id="@+id/equipo2"
+                        android:text="-"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        />
+                <Button
+                        android:id="@+id/btnUnoEquipo2"
+                        android:text="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addThreeTeamB"/>
+                <Button
+                        android:id="@+id/btnDosEquipo2"
+                        android:text="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addTwoTeamB"
+                        />
+                <Button
+                        android:id="@+id/btnTresEquipo2"
+                        android:text="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addOneTeamB"
+                        />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_gravity="center"
+        />
+    </LinearLayout>
 </LinearLayout>

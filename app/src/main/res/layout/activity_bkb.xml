@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
         android:layout_height="match_parent"
+        android:background="@drawable/negrito"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent">
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
@@ -18,32 +18,57 @@
                       android:orientation="vertical"
                       android:layout_height="wrap_content">
             <TextView android:layout_width="wrap_content"
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:fontFamily="sans-serif-black"
                       android:text="Ingrese equipo 1: "
                       android:layout_gravity="center"
                       android:layout_height="wrap_content"/>
             <EditText android:layout_width="match_parent"
                       android:id="@+id/et_equipo1"
+                      android:textSize="20dp"
+                      android:hint="-"
+                      android:textColor="#D0482F"
+                      android:fontFamily="sans-serif-black"
                       android:layout_height="wrap_content"/>
             <TextView android:layout_width="wrap_content"
                       android:text="Ingrese equipo 2: "
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:fontFamily="sans-serif-black"
                       android:layout_gravity="center"
                       android:layout_height="wrap_content"/>
             <EditText android:layout_width="match_parent"
                       android:id="@+id/et_equipo2"
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:hint="-"
                       android:layout_height="wrap_content"/>
             <TextView android:layout_width="wrap_content"
                       android:text="Ingrese hora: "
+                      android:textColor="#D0482F"
+                      android:fontFamily="sans-serif-black"
                       android:layout_gravity="center"
+                      android:textSize="20dp"
                       android:layout_height="wrap_content"/>
             <EditText android:layout_width="match_parent"
                       android:id="@+id/et_hora"
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:hint="-"
                       android:layout_height="wrap_content"/>
             <TextView android:layout_width="wrap_content"
                       android:text="Ingrese fecha: "
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:fontFamily="sans-serif-black"
                       android:layout_gravity="center"
                       android:layout_height="wrap_content"/>
             <EditText android:layout_width="match_parent"
                       android:id="@+id/et_fecha"
+                      android:textColor="#D0482F"
+                      android:textSize="20dp"
+                      android:hint="-"
                       android:layout_height="wrap_content"/>
         </LinearLayout>
         <LinearLayout
@@ -60,12 +85,18 @@
                 <TextView
                         android:layout_width="match_parent"
                         android:text="Team A"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#D0482F"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textStyle="bold"/>
                 <TextView
                         android:id="@+id/equipo1"
                         android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#D0482F"
+                        android:fontFamily="sans-serif-black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -73,6 +104,7 @@
                 <Button
                         android:id="@+id/btnUnoEquipo1"
                         android:text="1"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"
@@ -80,6 +112,7 @@
                 <Button
                         android:id="@+id/btnDosEquipo1"
                         android:text="2"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"
@@ -87,6 +120,7 @@
                 <Button
                         android:id="@+id/btnTresEquipo1"
                         android:text="3"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"
@@ -103,14 +137,20 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
                 <TextView
+                        android:textColor="#D0482F"
                         android:layout_width="match_parent"
                         android:text="Team B"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-black"
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textStyle="bold"/>
                 <TextView
                         android:id="@+id/equipo2"
                         android:text="-"
+                        android:textSize="20dp"
+                        android:fontFamily="sans-serif-black"
+                        android:textColor="#D0482F"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
@@ -118,12 +158,14 @@
                 <Button
                         android:id="@+id/btnUnoEquipo2"
                         android:text="1"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"/>
                 <Button
                         android:id="@+id/btnDosEquipo2"
                         android:text="2"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"
@@ -131,6 +173,7 @@
                 <Button
                         android:id="@+id/btnTresEquipo2"
                         android:text="3"
+                        style="@android:style/Widget.Holo.Button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="accionBoton"
@@ -142,6 +185,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Guardar"
+                style="@android:style/Widget.Holo.Button"
                 android:layout_gravity="center"
         />
     </LinearLayout>

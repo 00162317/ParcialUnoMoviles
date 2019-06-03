@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:background="@drawable/negri"
         android:layout_height="match_parent"
+
         tools:context="com.example.parcialunomoviles.Viewer">
     <TextView android:layout_width="wrap_content"
               android:text="Resultados Finales"

@@ -1,5 +1,6 @@
 package com.example.parcialunomoviles.Activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
@@ -29,6 +30,7 @@ class Activity_bkb : AppCompatActivity() {
                 ,equipo1.text.toString(),equipo2.text.toString(),equipoGanador,et_hora.text.toString(),et_fecha.text.toString())
             Toast.makeText(applicationContext,"Guardado con exito",Toast.LENGTH_SHORT).show()
             viewModelBKB.insert(partido)
+            startActivity(Intent(this@Activity_bkb,MainActivity::class.java))
         }
     }
     fun accionBoton(vista:View){

@@ -13,6 +13,8 @@ import kotlinx.coroutines.launch
 class BasketBallViewModel(application: Application):AndroidViewModel(application){
     private var repository: BasketBallRepository? = null
     var allBKB: LiveData<List<BasketBall>>? = null
+    var puntuacionEquipo1: Int=0
+    var puntuacionEquipo2:Int=0
 
     init {
         val bkbDao=BasketBallRoomDataBase.getDatabase(application).BasketBallDao()

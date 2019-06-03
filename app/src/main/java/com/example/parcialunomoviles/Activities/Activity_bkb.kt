@@ -3,6 +3,7 @@ package com.example.parcialunomoviles.Activities
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.example.parcialunomoviles.Entities.BasketBall
@@ -26,7 +27,7 @@ class Activity_bkb : AppCompatActivity() {
             var equipoGanador=""
             var partido=BasketBall(0,et_equipo1.text.toString(),et_equipo2.text.toString()
                 ,equipo1.text.toString(),equipo2.text.toString(),equipoGanador,et_hora.text.toString(),et_fecha.text.toString())
-
+            Toast.makeText(applicationContext,"Guardado con exito",Toast.LENGTH_SHORT).show()
             viewModelBKB.insert(partido)
         }
     }

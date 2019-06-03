@@ -13,7 +13,7 @@
         android:background="@drawable/negri"
         android:layout_height="match_parent"
 
-        tools:context="com.example.parcialunomoviles.Viewer">
+        tools:context="com.example.parcialunomoviles.Activities.Viewer">
     <TextView android:layout_width="wrap_content"
               android:text="Resultados Finales"
               android:textSize="30dp"

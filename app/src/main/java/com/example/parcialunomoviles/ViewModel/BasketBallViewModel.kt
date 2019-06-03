@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
-import com.example.parcialunomoviles.BasketBallRoomDataBase
+import com.example.parcialunomoviles.DataBase.BasketBallRoomDataBase
 import com.example.parcialunomoviles.Entities.BasketBall
 import com.example.parcialunomoviles.Repository.BasketBallRepository
 import kotlinx.coroutines.Dispatchers
@@ -17,7 +17,7 @@ class BasketBallViewModel(application: Application):AndroidViewModel(application
     var puntuacionEquipo2:Int=0
 
     init {
-        val bkbDao=BasketBallRoomDataBase.getDatabase(application).BasketBallDao()
+        val bkbDao= BasketBallRoomDataBase.getDatabase(application).BasketBallDao()
 
         repository= BasketBallRepository(bkbDao)
 

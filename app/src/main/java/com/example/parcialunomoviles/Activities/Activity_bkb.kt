@@ -1,14 +1,12 @@
-package com.example.parcialunomoviles
+package com.example.parcialunomoviles.Activities
 
 import android.os.Bundle
-import android.text.TextUtils.isEmpty
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.parcialunomoviles.Entities.BasketBall
+import com.example.parcialunomoviles.R
 import com.example.parcialunomoviles.ViewModel.BasketBallViewModel
 import kotlinx.android.synthetic.main.activity_bkb.*
 

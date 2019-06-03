@@ -1,11 +1,11 @@
-package com.example.parcialunomoviles
+package com.example.parcialunomoviles.Activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProviders
 import com.example.parcialunomoviles.Entities.BasketBall
+import com.example.parcialunomoviles.R
 import com.example.parcialunomoviles.ViewModel.BasketBallViewModel
-import kotlinx.android.synthetic.main.activity_bkb.*
 import kotlinx.android.synthetic.main.activity_viewer.*
 
 class Viewer : AppCompatActivity() {

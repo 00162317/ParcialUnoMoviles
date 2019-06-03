@@ -1,19 +1,15 @@
-package com.example.parcialunomoviles
+package com.example.parcialunomoviles.Activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Adapter
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.bumptech.glide.request.transition.Transition
 import com.example.parcialunomoviles.Adapter.BKBadapter
 import com.example.parcialunomoviles.Entities.BasketBall
+import com.example.parcialunomoviles.R
 import com.example.parcialunomoviles.ViewModel.BasketBallViewModel
-import kotlinx.android.synthetic.main.activity_bkb.view.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -37,13 +33,13 @@ class MainActivity : AppCompatActivity() {
             partido?.let { viewAdapter.setPartido(it)}
         })
         btn_more.setOnClickListener {
-            startActivity(Intent(this@MainActivity,Activity_bkb::class.java))
+            startActivity(Intent(this@MainActivity, Activity_bkb::class.java))
         }
     }
     fun itemClick(item:BasketBall){
         var content = Bundle()
         content.putParcelable("nigger", item)
-        startActivity(Intent(this,Viewer::class.java).putExtra("joto", content)
+        startActivity(Intent(this, Viewer::class.java).putExtra("joto", content)
         )
     }
 
